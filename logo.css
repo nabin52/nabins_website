@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /*header*/
+}
+header{
+    text-align: center;
+    background-color: rgb(110, 85, 109); 
+    padding: 27px;  
+    color: white;
+}
+#logo{
+    margin: -25px;
+    float: left;
+    width: 100px;
+}
+.flag{
+    float: right;
+    width: 70px;
+    position: relative;
+    margin-top: -23px;
+    margin-right: -20px;
+}
+/*main*/
+body{
+    font-family: Comic Sans MS;
+}
+ul{
+    float: right;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+ul li a{
+    padding: 10px;
+    text-decoration: none;
+    margin: -4px;
+    background-color: violet;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.main{
+    width: 100%;
+}
+.bb{
+     display: flex;
+     border: rgb(5, 5, 5) solid;
+}
+.bac{
+    width: 50%;
+    background-color: rgb(51, 94, 94);
+    padding: 15px;
+    height: 600px;
+}
+.col{
+    width: 50%;
+    background-color: rgb(34, 27, 27);
+    color: blanchedalmond;
+    padding: 15px;
+    height: 600px;
+}
+/*footer*/
+footer{
+    background-image: linear-gradient(
+        purple,violet,rgb(84, 85, 99));
+        padding: 10px;
+}
+.main_div{
+    display: flex;
+}
+.contact{
+    width: 25%;
+    height: 200px;
+}
+.facebook{
+    width: 25%;
+}
+.location{
+    width: 20%;
+}
+.map{
+ margin-left: 50px;
+}
+.location-div{
+    display: flex;
+}
+/*@media is used*/
+@media(max-width: 760px){
+    .main_div{
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .contact{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media(max-width: 600px){
+    .bac.col{
+        width: 50%;
+    }
+    
+    .contact{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .facebook{
+        margin-bottom: 30px;
+    }
+}
+.footer-address{
+    text-decoration: none;
+}
+/*hover*/
+a:hover,a.active{
+    background-color: rgb(117, 74, 74);
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
